@@ -1,0 +1,38 @@
+{
+
+  "server": "http://thumbor.server.example:8000",
+  "secret": "Virtual",
+
+  "conf1": {
+    "smartCrop": true,
+    "resize": {
+      "width": 1400,
+      "height": 400
+    },
+    "filters": [
+      {
+        "name": "brightness",
+        "value": 10
+      },
+      {
+        "name": "watermark",
+        "value": "https://images-na.ssl-images-amazon.com/images/I/41C6c0xIB8L.jpg,0,0,10"
+      }
+    ]
+  },
+  "conf2": {
+    "smartCrop": true,
+    "resize": {
+      "width": 1200,
+      "height": 300
+    }
+  },
+  "conf3": {
+    "smartCrop": false,
+    "fullFitIn": {
+      "width": 200,
+      "height": 500
+
+    }
+  }
+}
